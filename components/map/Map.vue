@@ -253,7 +253,7 @@ export default {
         global.BMap = {}
         global.BMap._preloader = new Promise((resolve, reject) => {
           global._initBaiduMap = function () {
-            resolve(global.BMap)
+            resolve(global.BMapGL)
             global.document.body.removeChild($script)
             global.BMap._preloader = null
             global._initBaiduMap = null
